@@ -23,7 +23,6 @@ TeCo outperforms them on different backdoor attacks, datasets, and model archite
 ## Setup
 - **Get TeCo**
 ```shell 
-git clone 
 git clone https://github.com/CGCL-codes/TeCo.git
 cd TeCo
 ```
@@ -31,6 +30,7 @@ cd TeCo
 *Merge Teco into [BackdoorBench](https://github.com/SCLBD/BackdoorBench) codebase*
 ```shell 
 git clone https://github.com/SCLBD/BackdoorBench.git
+rsync -av BackdoorBench-merge/ BackdoorBench/
 cd BackdoorBench
 conda create -n backdoorbench python=3.8
 conda activate backdoorbench
