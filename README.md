@@ -20,7 +20,8 @@ severity that leads to predictions' transition across different corruptions. Ext
 which even require either certain information about the trigger types or accessibility of clean data, 
 TeCo outperforms them on different backdoor attacks, datasets, and model architectures, enjoying a higher AUROC by 10% and 5 times of stability.
 
-## Setup
+## Deploy TeCo on BackdoorBench Codebase
+### Setup
 - **Get TeCo**
 ```shell 
 git clone https://github.com/CGCL-codes/TeCo.git
@@ -43,7 +44,7 @@ sh ./sh/init_folders.sh
 pip install imagecorruptions
 ```
 
-## Quick Start
+### Quick Start
 - **Train Backdoor Model**
 ```
 python ./attack/badnet.py --yaml_path ../config/attack/prototype/cifar10.yaml --patch_mask_path ../resource/badnet/trigger_image.png  --save_folder_name badnet_0_1
