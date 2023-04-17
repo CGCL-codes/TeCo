@@ -38,7 +38,7 @@ conda activate backdoorbench
 sh ./sh/install.sh
 sh ./sh/init_folders.sh
 ```
-- **Build Environment**\
+- **Install Additional Package**\
 *Use [imagecorruptions](https://github.com/bethgelab/imagecorruptions) for fast image corruptions deployment.*
 ```shell 
 pip install imagecorruptions
