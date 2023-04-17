@@ -55,13 +55,35 @@ python ./attack/badnet.py --yaml_path ../config/attack/prototype/cifar10.yaml --
 python ./defense/teco.py --result_file badnet_0_1 --yaml_path ./config/defense/teco/cifar10.yaml --dataset cifar10
 ```
 
+For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench](https://github.com/SCLBD/BackdoorBench).
 ## BibTeX 
-If you find TeCo both interesting and helpful, please cite us in your research or publications:
+If you find TeCo both interesting and helpful, please consider citing us in your research or publications:
 ```bibtex
 @article{liu2023detecting,
   title={Detecting Backdoors During the Inference Stage Based on Corruption Robustness Consistency},
   author={Liu, Xiaogeng and Li, Minghui and Wang, Haoyu and Hu, Shengshan and Ye, Dengpan and Jin, Hai and Wu, Libing and Xiao, Chaowei},
   journal={arXiv preprint arXiv:2303.18191},
   year={2023}
+}
+```
+## Acknowledge
+```bibtex
+@inproceedings{backdoorbench,
+  title={BackdoorBench: A Comprehensive Benchmark of Backdoor Learning},
+  author={Wu, Baoyuan and Chen, Hongrui and Zhang, Mingda and Zhu, Zihao and Wei, Shaokui and Yuan, Danni and Shen, Chao},
+  booktitle={Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2022}
+}
+```
+```bibtex
+@article{michaelis2019dragon,
+  title={Benchmarking Robustness in Object Detection: 
+    Autonomous Driving when Winter is Coming},
+  author={Michaelis, Claudio and Mitzkus, Benjamin and 
+    Geirhos, Robert and Rusak, Evgenia and 
+    Bringmann, Oliver and Ecker, Alexander S. and 
+    Bethge, Matthias and Brendel, Wieland},
+  journal={arXiv preprint arXiv:1907.07484},
+  year={2019}
 }
 ```
