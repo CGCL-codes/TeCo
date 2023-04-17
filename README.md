@@ -28,7 +28,7 @@ git clone https://github.com/CGCL-codes/TeCo.git
 cd TeCo
 ```
 - **Get BackdoorBench**\
-*Merge Teco into [BackdoorBench](https://github.com/SCLBD/BackdoorBench) codebase*
+*Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench) codebase*
 ```shell 
 git clone https://github.com/SCLBD/BackdoorBench.git
 rsync -av BackdoorBench-merge/ BackdoorBench/
@@ -45,7 +45,7 @@ pip install imagecorruptions
 ```
 
 ### Quick Start
-- **Train Backdoor Model**
+- **Train a Backdoor Model**
 ```
 python ./attack/badnet.py --yaml_path ../config/attack/prototype/cifar10.yaml --patch_mask_path ../resource/badnet/trigger_image.png  --save_folder_name badnet_0_1
 ```
