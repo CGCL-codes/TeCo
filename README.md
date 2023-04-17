@@ -2,9 +2,9 @@
 
 The official implementation of our CVPR 2023 paper "Detecting Backdoors During the Inference Stage Based on Corruption Robustness Consistency".[[Paper](https://arxiv.org/abs/2303.18191)] 
 
-![Backdoor Detection](https://img.shields.io/badge/Backdoor-Detction-important.svg?style=plastic)
+![Backdoor Detection](https://img.shields.io/badge/Backdoor-Detction-yellow.svg?style=plastic)
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg?style=plastic)
-![Pytorch 1.11.0](https://img.shields.io/badge/pytorch-1.11.0-red.svg?style=plastic)
+![Pytorch 1.11.0](https://img.shields.io/badge/pytorch-1.11.0-orange.svg?style=plastic)
 
 ## Abstract
 Deep neural networks are proven to be vulnerable to backdoor attacks. Detecting the trigger samples during the inference stage, 
