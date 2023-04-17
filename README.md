@@ -53,3 +53,14 @@ python ./attack/badnet.py --yaml_path ../config/attack/prototype/cifar10.yaml --
 ```
 python ./defense/teco.py --result_file badnet_0_1 --yaml_path ./config/defense/teco/cifar10.yaml --dataset cifar10
 ```
+
+## BibTeX 
+If you find TeCo both interesting and helpful, please cite us in your research or publications:
+```bibtex
+@article{liu2023detecting,
+  title={Detecting Backdoors During the Inference Stage Based on Corruption Robustness Consistency},
+  author={Liu, Xiaogeng and Li, Minghui and Wang, Haoyu and Hu, Shengshan and Ye, Dengpan and Jin, Hai and Wu, Libing and Xiao, Chaowei},
+  journal={arXiv preprint arXiv:2303.18191},
+  year={2023}
+}
+```
