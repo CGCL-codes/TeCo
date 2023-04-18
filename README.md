@@ -47,6 +47,19 @@ mkdir data/tiny
 pip install imagecorruptions
 ```
 
+### Quick Start
+- **Train a Backdoor Model**
+```
+python ./attack/badnet_attack.py --yaml_path ../config/attack/badnet/cifar10.yaml --dataset cifar10 --dataset_path ../data --save_folder_name badnet_0_1
+```
+
+- **TeCo Detection**
+```
+python ./defense/teco/teco.py --result_file badnet_0_1 --yaml_path ./config/defense/teco/cifar10.yaml --dataset cifar10
+```
+
+For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench-v1.0](https://github.com/SCLBD/BackdoorBench/tree/v1).
+
 ## Deploy TeCo on BackdoorBench-v2.0 Codebase
 ### Setup
 - **Get TeCo**
@@ -83,7 +96,8 @@ python ./attack/badnet.py --yaml_path ../config/attack/prototype/cifar10.yaml --
 python ./defense/teco.py --result_file badnet_0_1 --yaml_path ./config/defense/teco/cifar10.yaml --dataset cifar10
 ```
 
-For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench](https://github.com/SCLBD/BackdoorBench).
+For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench-v2.0](https://github.com/SCLBD/BackdoorBench).
+
 ## BibTeX 
 If you find TeCo both interesting and helpful, please consider citing us in your research or publications:
 ```bibtex
