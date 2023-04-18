@@ -20,7 +20,7 @@ severity that leads to predictions' transition across different corruptions. Ext
 which even require either certain information about the trigger types or accessibility of clean data, 
 TeCo outperforms them on different backdoor attacks, datasets, and model architectures, enjoying a higher AUROC by 10% and 5 times of stability.
 
-## Deploy TeCo on BackdoorBench-v1.0 Codebase
+## Deploy TeCo on BackdoorBench-v1.0 Codebase (*recommended*)
 ### Setup
 - **Get TeCo**
 ```shell 
