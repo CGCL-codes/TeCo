@@ -28,7 +28,7 @@ git clone https://github.com/CGCL-codes/TeCo.git
 cd TeCo
 ```
 - **Get BackdoorBench-v1.0**\
-*Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench)-v1.0 codebase*
+*Merge Teco into the [BackdoorBench-v1.0](https://github.com/SCLBD/BackdoorBench/tree/v1) codebase*
 ```shell 
 git clone -b v1 https://github.com/SCLBD/BackdoorBench.git
 rsync -av BackdoorBench-v1.0-merge/ BackdoorBench/
@@ -56,7 +56,7 @@ cd TeCo
 ```
 or just ```cd TeCo``` if you already have TeCo project.
 - **Get BackdoorBench-v2.0**\
-*Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench)-v2.0 codebase*
+*Merge Teco into the [BackdoorBench-v2.0](https://github.com/SCLBD/BackdoorBench) codebase*
 ```shell 
 git clone https://github.com/SCLBD/BackdoorBench.git
 rsync -av BackdoorBench-v2.0-merge/ BackdoorBench/
