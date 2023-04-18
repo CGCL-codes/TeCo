@@ -41,6 +41,11 @@ mkdir data/cifar100
 mkdir data/gtsrb
 mkdir data/tiny
 ```
+- **Install Additional Package**\
+*Use [imagecorruptions](https://github.com/bethgelab/imagecorruptions) for fast image corruptions deployment.*
+```shell 
+pip install imagecorruptions
+```
 
 ## Deploy TeCo on BackdoorBench-v2.0 Codebase
 ### Setup
