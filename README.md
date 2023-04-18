@@ -49,6 +49,7 @@ mkdir data/tiny
 git clone https://github.com/CGCL-codes/TeCo.git
 cd TeCo
 ```
+or just ```cd TeCo``` if you already have TeCo project.
 - **Get BackdoorBench-v2.0**\
 *Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench)-v2.0 codebase*
 ```shell 
