@@ -20,6 +20,28 @@ severity that leads to predictions' transition across different corruptions. Ext
 which even require either certain information about the trigger types or accessibility of clean data, 
 TeCo outperforms them on different backdoor attacks, datasets, and model architectures, enjoying a higher AUROC by 10% and 5 times of stability.
 
+## Deploy TeCo on BackdoorBench-v1.0 Codebase
+### Setup
+- **Get TeCo**
+```shell 
+git clone https://github.com/CGCL-codes/TeCo.git
+cd TeCo
+```
+- **Get BackdoorBench-v1.0**\
+*Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench)-v1.0 codebase*
+```shell 
+git clone -b v1 https://github.com/SCLBD/BackdoorBench.git
+rsync -av BackdoorBench-v1.0-merge/ BackdoorBench/
+cd BackdoorBench
+sh ./sh/install.sh
+mkdir record
+mkdir data
+mkdir data/cifar10
+mkdir data/cifar100
+mkdir data/gtsrb
+mkdir data/tiny
+```
+
 ## Deploy TeCo on BackdoorBench-v2.0 Codebase
 ### Setup
 - **Get TeCo**
@@ -27,8 +49,8 @@ TeCo outperforms them on different backdoor attacks, datasets, and model archite
 git clone https://github.com/CGCL-codes/TeCo.git
 cd TeCo
 ```
-- **Get BackdoorBench**\
-*Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench) codebase*
+- **Get BackdoorBench-v2.0**\
+*Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench)-v2.0 codebase*
 ```shell 
 git clone https://github.com/SCLBD/BackdoorBench.git
 rsync -av BackdoorBench-v2.0-merge/ BackdoorBench/
