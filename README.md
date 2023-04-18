@@ -20,7 +20,7 @@ severity that leads to predictions' transition across different corruptions. Ext
 which even require either certain information about the trigger types or accessibility of clean data, 
 TeCo outperforms them on different backdoor attacks, datasets, and model architectures, enjoying a higher AUROC by 10% and 5 times of stability.
 
-## Deploy TeCo on BackdoorBench Codebase
+## Deploy TeCo on BackdoorBench-v2.0 Codebase
 ### Setup
 - **Get TeCo**
 ```shell 
@@ -31,7 +31,7 @@ cd TeCo
 *Merge Teco into the [BackdoorBench](https://github.com/SCLBD/BackdoorBench) codebase*
 ```shell 
 git clone https://github.com/SCLBD/BackdoorBench.git
-rsync -av BackdoorBench-merge/ BackdoorBench/
+rsync -av BackdoorBench-v2.0-merge/ BackdoorBench/
 cd BackdoorBench
 conda create -n backdoorbench python=3.8
 conda activate backdoorbench
