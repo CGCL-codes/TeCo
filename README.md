@@ -60,7 +60,9 @@ python ./defense/teco/teco.py --result_file badnet_0_1 --yaml_path ./config/defe
 
 For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench-v1.0](https://github.com/SCLBD/BackdoorBench/tree/v1).
 
-## Deploy TeCo on BackdoorBench-v2.0 Codebase
+~~## Deploy TeCo on BackdoorBench-v2.0 Codebase~~ (bugs exist, we are fixing them)
+<details>
+<p>
 ### Setup
 - **Get TeCo**
 ```shell 
@@ -97,6 +99,8 @@ python ./defense/teco.py --result_file badnet_0_1 --yaml_path ./config/defense/t
 ```
 
 For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench-v2.0](https://github.com/SCLBD/BackdoorBench).
+</p>
+</details> 
 
 ## BibTeX 
 If you find TeCo both interesting and helpful, please consider citing us in your research or publications:
