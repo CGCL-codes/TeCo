@@ -20,7 +20,7 @@ severity that leads to predictions' transition across different corruptions. Ext
 which even require either certain information about the trigger types or accessibility of clean data, 
 TeCo outperforms them on different backdoor attacks, datasets, and model architectures, enjoying a higher AUROC by 10% and 5 times of stability.
 
-## Deploy TeCo on BackdoorBench-v1.0 Codebase *(recommended)*
+## Deploy TeCo on BackdoorBench-v1.0 Codebase
 ### Setup
 - **Get TeCo**
 ```shell 
@@ -60,45 +60,6 @@ python ./defense/teco/teco.py --result_file badnet_0_1 --yaml_path ./config/defe
 
 For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench-v1.0](https://github.com/SCLBD/BackdoorBench/tree/v1).
 
-## ~~Deploy TeCo on BackdoorBench-v2.0 Codebase~~ (bugs exist, we are fixing them)
-<!--
-### Setup
-- **Get TeCo**
-```shell 
-git clone https://github.com/CGCL-codes/TeCo.git
-cd TeCo
-```
-or just ```cd TeCo``` if you already have TeCo project.
-- **Get BackdoorBench-v2.0**\
-*Merge Teco into the [BackdoorBench-v2.0](https://github.com/SCLBD/BackdoorBench) codebase*
-```shell 
-git clone https://github.com/SCLBD/BackdoorBench.git
-rsync -av BackdoorBench-v2.0-merge/ BackdoorBench/
-cd BackdoorBench
-conda create -n backdoorbench python=3.8
-conda activate backdoorbench
-sh ./sh/install.sh
-sh ./sh/init_folders.sh
-```
-- **Install Additional Package**\
-*Use [imagecorruptions](https://github.com/bethgelab/imagecorruptions) for fast image corruptions deployment.*
-```shell 
-pip install imagecorruptions
-```
-
-### Quick Start
-- **Train a Backdoor Model**
-```
-python ./attack/badnet.py --yaml_path ../config/attack/prototype/cifar10.yaml --patch_mask_path ../resource/badnet/trigger_image.png  --save_folder_name badnet_0_1
-```
-
-- **TeCo Detection**
-```
-python ./defense/teco.py --result_file badnet_0_1 --yaml_path ./config/defense/teco/cifar10.yaml --dataset cifar10
-```
-
-For guidance on conducting more evaluations, such as using different attacks, datasets, and model architectures, please refer to [BackdoorBench-v2.0](https://github.com/SCLBD/BackdoorBench).
--->
 ## BibTeX 
 If you find TeCo both interesting and helpful, please consider citing us in your research or publications:
 ```bibtex
