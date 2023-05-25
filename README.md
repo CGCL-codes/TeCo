@@ -63,11 +63,13 @@ For guidance on conducting more evaluations, such as using different attacks, da
 ## BibTeX 
 If you find TeCo both interesting and helpful, please consider citing us in your research or publications:
 ```bibtex
-@article{liu2023detecting,
-  title={Detecting Backdoors During the Inference Stage Based on Corruption Robustness Consistency},
-  author={Liu, Xiaogeng and Li, Minghui and Wang, Haoyu and Hu, Shengshan and Ye, Dengpan and Jin, Hai and Wu, Libing and Xiao, Chaowei},
-  journal={arXiv preprint arXiv:2303.18191},
-  year={2023}
+@InProceedings{Liu_2023_CVPR,
+    author    = {Liu, Xiaogeng and Li, Minghui and Wang, Haoyu and Hu, Shengshan and Ye, Dengpan and Jin, Hai and Wu, Libing and Xiao, Chaowei},
+    title     = {Detecting Backdoors During the Inference Stage Based on Corruption Robustness Consistency},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {16363-16372}
 }
 ```
 ## Acknowledge
